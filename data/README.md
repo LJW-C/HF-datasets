@@ -6,7 +6,7 @@ This folder stores dataset metadata and release instructions.
 The full dataset generated in the current experiment is:
 
 ```text
-E:\仿真\panoradio_like_ccir520_npy_fixed
+E:\仿真\build dataset
 ````
 
 Core files:
