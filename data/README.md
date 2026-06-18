@@ -24,7 +24,7 @@ meta.json              1,850 bytes
 The checksum manifest is:
 
 ```text
-panoradio_like_ccir520_npy_fixed/dataset_manifest.json
+dataset/dataset_manifest.json
 ```
 
 ## Dataset Release
@@ -46,31 +46,7 @@ Extraction code: 1234
 
 Users are encouraged to cite the IEEE DataPort record when using this dataset.
 
-## Recommended GitHub Release Method
 
-Do not upload the large dataset into normal Git history. Use one of these:
-
-1. GitHub Release assets, preferably split into smaller shards.
-2. Git LFS, if your account has enough LFS storage and file-size allowance.
-3. IEEE DataPort, Zenodo, Hugging Face Datasets, or another dataset archive, then link it from this repository.
-
-To prepare GitHub Release shards:
-
-```powershell
-python scripts\shard_dataset_for_release.py `
-  --dataset-root "E:\仿真\panoradio_like_ccir520_npy_fixed" `
-  --out-dir release\panoradio_like_ccir520_npy_fixed_shards `
-  --shard-size-mb 512
-```
-
-Upload all files in `release\panoradio_like_ccir520_npy_fixed_shards` as Release
-assets. Users can restore the dataset with:
-
-```powershell
-python scripts\restore_dataset_from_shards.py `
-  --shard-dir release\panoradio_like_ccir520_npy_fixed_shards `
-  --out-root data\panoradio_like_ccir520_npy_fixed
-```
 
 ## Git LFS Alternative
 
