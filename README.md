@@ -13,7 +13,7 @@ dataset files for machine-learning experiments.
 ```text
 generate_fldigi_wavs.py              # Record raw WAV files from Fldigi
 validate_raw_wavs.py                 # Validate raw WAV bandwidth and silence
-build_panoradio_like_dataset.py      # Convert WAV files to IQ dataset
+build_datasets.py      # Convert WAV files to IQ dataset
 visualize_iq_samples.py              # I/Q, constellation, spectrum, spectrogram plots
 diagnose_mode_visuals.py             # Extra raw-WAV/IQ diagnostic plots
 train_rf_classifier.py               # Train one RF classifier
@@ -117,7 +117,7 @@ python validate_raw_wavs.py `
 ## Build the IQ Dataset
 
 ```powershell
-python build_panoradio_like_dataset.py `
+python build_datasets.py `
   --raw-root "E:\仿真\raw_wav" `
   --out-root "E:\仿真\panoradio_like_ccir520_npy_fixed" `
   --fs 6000 `
