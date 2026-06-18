@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Training outputs and diagnostics
+runs/
+diagnostics/
+visualizations/
+*_visualizations/
+docx_render_check*/
+latest_doc_render_check*/
+
+# Raw recordings and local generated datasets
+raw_wav/
+panoradio_like*/
+*_npy/
+
+# Local release staging outputs
+release/
+dataset_shards/
+
+# OS / IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary documents
+*.tmp
+~$*.docx

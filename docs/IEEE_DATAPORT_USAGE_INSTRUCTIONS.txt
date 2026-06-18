@@ -1,0 +1,13 @@
+This dataset contains complex baseband I/Q samples for HF digital-mode signal classification. Download and extract the dataset directory, then load the NumPy files using Python. The main data array is X.npy, which has shape [N, 2048] and dtype complex64. Each row is one fixed-length complex I/Q vector sampled at 6 kHz. The primary class label is stored in y.npy, and the ordered class-name list is stored in mode_names.json. Additional labels are provided in snr_db.npy and channel_profile.npy for per-SNR and per-channel-profile evaluation.
+
+Recommended basic usage:
+
+1. Load X.npy, y.npy, snr_db.npy, channel_profile.npy, mode_names.json, and channel_profiles.json.
+2. Convert each complex I/Q vector into a two-channel real tensor if needed: [real(IQ), imag(IQ)] with shape [2, 2048].
+3. Use y.npy as the main fine-grained signal-mode classification target.
+4. Use snr_db.npy to report accuracy at each SNR level.
+5. Use channel_profile.npy to analyze performance under different HF fading conditions.
+6. Use stratified train/validation/test splits that preserve mode and SNR distributions.
+
+The dataset is synthetic and audio-derived. The signals were generated from Fldigi WAV recordings, converted to analytic complex baseband I/Q, resampled to 6 kHz, impaired with Watterson-style HF fading, randomized frequency and phase offsets, and complex AWGN. The data are suitable for controlled HF signal-recognition experiments, but they should not be interpreted as direct over-the-air RF receiver recordings.
+

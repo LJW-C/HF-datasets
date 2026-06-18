@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+sounddevice
+soundfile
+torch
+scikit-learn
+tqdm

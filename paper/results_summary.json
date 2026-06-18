@@ -1,0 +1,386 @@
+[
+  {
+    "model": "conformer",
+    "display_name": "Conformer",
+    "model_dir": "runs\\model_suite_fixed\\conformer",
+    "metrics": {
+      "model": "conformer",
+      "test_samples": 24481,
+      "accuracy": 0.8157754993668559,
+      "balanced_accuracy": 0.8157699865743198,
+      "macro_f1": 0.8148186208324565,
+      "weighted_f1": 0.814824334864233,
+      "best_val_acc": 0.8168225826218392
+    },
+    "snr_points": [
+      {
+        "snr_db": -10.0,
+        "samples": 3060,
+        "accuracy": 0.707843137254902,
+        "macro_f1": 0.7057207117662664
+      },
+      {
+        "snr_db": -5.0,
+        "samples": 3060,
+        "accuracy": 0.8163398692810457,
+        "macro_f1": 0.8153958192072968
+      },
+      {
+        "snr_db": 0.0,
+        "samples": 3060,
+        "accuracy": 0.8235294117647058,
+        "macro_f1": 0.8225878772674622
+      },
+      {
+        "snr_db": 5.0,
+        "samples": 3061,
+        "accuracy": 0.8330610911466841,
+        "macro_f1": 0.8311939355663372
+      },
+      {
+        "snr_db": 10.0,
+        "samples": 3060,
+        "accuracy": 0.8339869281045752,
+        "macro_f1": 0.8336154904838176
+      },
+      {
+        "snr_db": 15.0,
+        "samples": 3060,
+        "accuracy": 0.8395424836601307,
+        "macro_f1": 0.8387931741942762
+      },
+      {
+        "snr_db": 20.0,
+        "samples": 3060,
+        "accuracy": 0.842156862745098,
+        "macro_f1": 0.8410431388409131
+      },
+      {
+        "snr_db": 25.0,
+        "samples": 3060,
+        "accuracy": 0.8297385620915033,
+        "macro_f1": 0.8292022170289561
+      }
+    ]
+  },
+  {
+    "model": "tcn",
+    "display_name": "TCN",
+    "model_dir": "runs\\model_suite_fixed\\tcn",
+    "metrics": {
+      "model": "tcn",
+      "test_samples": 24481,
+      "accuracy": 0.8028675299211634,
+      "balanced_accuracy": 0.8028614047978664,
+      "macro_f1": 0.8016154774400982,
+      "weighted_f1": 0.8016210812937546,
+      "best_val_acc": 0.797704154581478
+    },
+    "snr_points": [
+      {
+        "snr_db": -10.0,
+        "samples": 3060,
+        "accuracy": 0.5934640522875817,
+        "macro_f1": 0.5888527801729992
+      },
+      {
+        "snr_db": -5.0,
+        "samples": 3060,
+        "accuracy": 0.7986928104575164,
+        "macro_f1": 0.7969785636495373
+      },
+      {
+        "snr_db": 0.0,
+        "samples": 3060,
+        "accuracy": 0.8202614379084967,
+        "macro_f1": 0.8190903713949357
+      },
+      {
+        "snr_db": 5.0,
+        "samples": 3061,
+        "accuracy": 0.836327997386475,
+        "macro_f1": 0.8354689984687171
+      },
+      {
+        "snr_db": 10.0,
+        "samples": 3060,
+        "accuracy": 0.8480392156862745,
+        "macro_f1": 0.8477525173923979
+      },
+      {
+        "snr_db": 15.0,
+        "samples": 3060,
+        "accuracy": 0.8493464052287582,
+        "macro_f1": 0.8489562110360456
+      },
+      {
+        "snr_db": 20.0,
+        "samples": 3060,
+        "accuracy": 0.8437908496732026,
+        "macro_f1": 0.8430522669325794
+      },
+      {
+        "snr_db": 25.0,
+        "samples": 3060,
+        "accuracy": 0.8330065359477125,
+        "macro_f1": 0.8327932660043218
+      }
+    ]
+  },
+  {
+    "model": "cldnn",
+    "display_name": "CLDNN",
+    "model_dir": "runs\\model_suite_fixed\\cldnn",
+    "metrics": {
+      "model": "cldnn",
+      "test_samples": 24481,
+      "accuracy": 0.7926963767819942,
+      "balanced_accuracy": 0.7926904031332636,
+      "macro_f1": 0.7919778327843416,
+      "weighted_f1": 0.7919835712157527,
+      "best_val_acc": 0.7919441153641897
+    },
+    "snr_points": [
+      {
+        "snr_db": -10.0,
+        "samples": 3060,
+        "accuracy": 0.5568627450980392,
+        "macro_f1": 0.5570963316773522
+      },
+      {
+        "snr_db": -5.0,
+        "samples": 3060,
+        "accuracy": 0.7738562091503268,
+        "macro_f1": 0.7727538507220204
+      },
+      {
+        "snr_db": 0.0,
+        "samples": 3060,
+        "accuracy": 0.8202614379084967,
+        "macro_f1": 0.8193441639534745
+      },
+      {
+        "snr_db": 5.0,
+        "samples": 3061,
+        "accuracy": 0.8294674942829141,
+        "macro_f1": 0.8287547995887672
+      },
+      {
+        "snr_db": 10.0,
+        "samples": 3060,
+        "accuracy": 0.8431372549019608,
+        "macro_f1": 0.8428238017799989
+      },
+      {
+        "snr_db": 15.0,
+        "samples": 3060,
+        "accuracy": 0.8375816993464053,
+        "macro_f1": 0.8373906378655777
+      },
+      {
+        "snr_db": 20.0,
+        "samples": 3060,
+        "accuracy": 0.8392156862745098,
+        "macro_f1": 0.838686612960165
+      },
+      {
+        "snr_db": 25.0,
+        "samples": 3060,
+        "accuracy": 0.8411764705882353,
+        "macro_f1": 0.8401418532645424
+      }
+    ]
+  },
+  {
+    "model": "resnet1d",
+    "display_name": "ResNet-1D",
+    "model_dir": "runs\\model_suite_fixed\\resnet1d",
+    "metrics": {
+      "model": "resnet1d",
+      "test_samples": 24481,
+      "accuracy": 0.7519300682161676,
+      "balanced_accuracy": 0.7519268515872692,
+      "macro_f1": 0.7487443899789444,
+      "weighted_f1": 0.7487484334951844,
+      "best_val_acc": 0.7526451243923363
+    },
+    "snr_points": [
+      {
+        "snr_db": -10.0,
+        "samples": 3060,
+        "accuracy": 0.3843137254901961,
+        "macro_f1": 0.3727644980360773
+      },
+      {
+        "snr_db": -5.0,
+        "samples": 3060,
+        "accuracy": 0.7058823529411765,
+        "macro_f1": 0.7029782940284122
+      },
+      {
+        "snr_db": 0.0,
+        "samples": 3060,
+        "accuracy": 0.792156862745098,
+        "macro_f1": 0.7870639327381904
+      },
+      {
+        "snr_db": 5.0,
+        "samples": 3061,
+        "accuracy": 0.8095393662201895,
+        "macro_f1": 0.8050663673394959
+      },
+      {
+        "snr_db": 10.0,
+        "samples": 3060,
+        "accuracy": 0.8274509803921568,
+        "macro_f1": 0.8257297567773232
+      },
+      {
+        "snr_db": 15.0,
+        "samples": 3060,
+        "accuracy": 0.8274509803921568,
+        "macro_f1": 0.825684334079601
+      },
+      {
+        "snr_db": 20.0,
+        "samples": 3060,
+        "accuracy": 0.8356209150326798,
+        "macro_f1": 0.8338114355973518
+      },
+      {
+        "snr_db": 25.0,
+        "samples": 3060,
+        "accuracy": 0.8330065359477125,
+        "macro_f1": 0.8317344527409347
+      }
+    ]
+  },
+  {
+    "model": "transformer",
+    "display_name": "Transformer",
+    "model_dir": "runs\\model_suite_fixed\\transformer",
+    "metrics": {
+      "model": "transformer",
+      "test_samples": 24481,
+      "accuracy": 0.7163514562313631,
+      "balanced_accuracy": 0.7163447168133966,
+      "macro_f1": 0.7131779112538611,
+      "weighted_f1": 0.7131844213831957,
+      "best_val_acc": 0.7213121451039667
+    },
+    "snr_points": [
+      {
+        "snr_db": -10.0,
+        "samples": 3060,
+        "accuracy": 0.3179738562091503,
+        "macro_f1": 0.3064935395787101
+      },
+      {
+        "snr_db": -5.0,
+        "samples": 3060,
+        "accuracy": 0.5738562091503268,
+        "macro_f1": 0.5684210352477819
+      },
+      {
+        "snr_db": 0.0,
+        "samples": 3060,
+        "accuracy": 0.7526143790849673,
+        "macro_f1": 0.7500758559696347
+      },
+      {
+        "snr_db": 5.0,
+        "samples": 3061,
+        "accuracy": 0.8082326037242731,
+        "macro_f1": 0.8073315176162038
+      },
+      {
+        "snr_db": 10.0,
+        "samples": 3060,
+        "accuracy": 0.8173202614379085,
+        "macro_f1": 0.8172931832193789
+      },
+      {
+        "snr_db": 15.0,
+        "samples": 3060,
+        "accuracy": 0.8248366013071895,
+        "macro_f1": 0.8245562137657092
+      },
+      {
+        "snr_db": 20.0,
+        "samples": 3060,
+        "accuracy": 0.8186274509803921,
+        "macro_f1": 0.8180258987056852
+      },
+      {
+        "snr_db": 25.0,
+        "samples": 3060,
+        "accuracy": 0.8173202614379085,
+        "macro_f1": 0.8169563963665437
+      }
+    ]
+  },
+  {
+    "model": "iq_cnn",
+    "display_name": "IQ-CNN",
+    "model_dir": "runs\\model_suite_fixed\\iq_cnn",
+    "metrics": {
+      "model": "iq_cnn",
+      "test_samples": 24481,
+      "accuracy": 0.6897594052530533,
+      "balanced_accuracy": 0.689754839594871,
+      "macro_f1": 0.6843210085708754,
+      "weighted_f1": 0.6843243207944816,
+      "best_val_acc": 0.6872829772458026
+    },
+    "snr_points": [
+      {
+        "snr_db": -10.0,
+        "samples": 3060,
+        "accuracy": 0.23529411764705882,
+        "macro_f1": 0.22269828689287513
+      },
+      {
+        "snr_db": -5.0,
+        "samples": 3060,
+        "accuracy": 0.5225490196078432,
+        "macro_f1": 0.5148142234078966
+      },
+      {
+        "snr_db": 0.0,
+        "samples": 3060,
+        "accuracy": 0.7248366013071895,
+        "macro_f1": 0.7217416786621831
+      },
+      {
+        "snr_db": 5.0,
+        "samples": 3061,
+        "accuracy": 0.7925514537732767,
+        "macro_f1": 0.7914082993909217
+      },
+      {
+        "snr_db": 10.0,
+        "samples": 3060,
+        "accuracy": 0.8045751633986928,
+        "macro_f1": 0.8041914976366192
+      },
+      {
+        "snr_db": 15.0,
+        "samples": 3060,
+        "accuracy": 0.8147058823529412,
+        "macro_f1": 0.8132418790026746
+      },
+      {
+        "snr_db": 20.0,
+        "samples": 3060,
+        "accuracy": 0.8179738562091503,
+        "macro_f1": 0.8168920745331778
+      },
+      {
+        "snr_db": 25.0,
+        "samples": 3060,
+        "accuracy": 0.8055555555555556,
+        "macro_f1": 0.8042784136376054
+      }
+    ]
+  }
+]
