@@ -1,3 +1,4 @@
+````markdown
 # Dataset Files
 
 This folder stores dataset metadata and release instructions.
@@ -6,7 +7,7 @@ The full dataset generated in the current experiment is:
 
 ```text
 E:\仿真\panoradio_like_ccir520_npy_fixed
-```
+````
 
 Core files:
 
@@ -26,14 +27,32 @@ The checksum manifest is:
 panoradio_like_ccir520_npy_fixed/dataset_manifest.json
 ```
 
+## Dataset Release
+
+The latest version of the generated dataset has been released on IEEE DataPort:
+
+```text
+Junwei Li, "A Reproducible HF Digital-Mode I/Q Dataset Generation Framework from Fldigi WAV Recordings",
+IEEE DataPort, June 17, 2026, doi:10.21227/9pzn-h761
+```
+
+A mirror copy is also available through Baidu Netdisk:
+
+```text
+File: dataset.rar
+Link: https://pan.baidu.com/s/1jsF8lL9DguAO7UcSWeW5Dg?pwd=1234
+Extraction code: 1234
+```
+
+Users are encouraged to cite the IEEE DataPort record when using this dataset.
+
 ## Recommended GitHub Release Method
 
 Do not upload the large dataset into normal Git history. Use one of these:
 
 1. GitHub Release assets, preferably split into smaller shards.
 2. Git LFS, if your account has enough LFS storage and file-size allowance.
-3. Zenodo, Hugging Face Datasets, or another dataset archive, then link it from
-   this repository.
+3. IEEE DataPort, Zenodo, Hugging Face Datasets, or another dataset archive, then link it from this repository.
 
 To prepare GitHub Release shards:
 
@@ -67,3 +86,6 @@ git push origin main
 
 For very large files, Release assets or an external dataset archive are usually
 easier to manage than keeping the dataset in Git history.
+
+```
+```
