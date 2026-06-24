@@ -160,15 +160,4 @@ Summarize results:
 python summarize_model_results.py --runs-dir runs/model_suite_fixed
 ```
 
-Generate paper figures and tables:
 
-```powershell
-python make_paper_results.py `
-  --runs-dir runs/model_suite_fixed `
-  --paper-dir paper
-```
-
-## License
-
-Code is released under the MIT License. Check the licenses of Fldigi, external
-libraries, and radio standards documents separately.
