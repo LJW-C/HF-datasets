@@ -1,7 +1,6 @@
 # HF Digital-Mode IQ Dataset
 
-This repository contains code and documentation for generating a Panoradio-like
-HF digital-mode IQ dataset from Fldigi WAV recordings.
+This repository contains code and documentation for generating HF digital-mode IQ dataset from Fldigi WAV recordings.
 
 The pipeline records standard digital-mode audio signals with Fldigi, converts
 the real-valued WAV recordings to complex baseband IQ, applies a Watterson-style
