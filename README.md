@@ -22,7 +22,6 @@ summarize_model_results.py           # Summarize benchmark outputs
 make_paper_results.py                # Generate paper result figures and tables
 rfml_benchmark/                      # Dataset loader and model definitions
 docs/                                # Workflow documentation
-paper/                               # IEEE-style LaTeX paper and result figures
 data/                                # Dataset manifest and release instructions
 scripts/                             # Dataset release/upload helper scripts
 ```
