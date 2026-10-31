@@ -1,0 +1,19 @@
+{
+  "X.npy": "Received complex64 vector: unit-power clean crop plus complex AWGN; stored received power is not normalized after noise.",
+  "y.npy": "Zero-based local class index into mode_names.json. Different array versions need not share class IDs.",
+  "snr_db.npy": "Target clean/AWGN power ratio in dB over the full 6000 Hz complex bandwidth, not equal in-band SNR.",
+  "channel_profile.npy": "Index into channel_profiles.json: 0 good, 1 moderate, 2 poor, 3 flutter.",
+  "source_id.npy": "Index into source_recordings.json; one source recording per local class.",
+  "split_id.npy": "0 train, 1 val, 2 test; must agree with benchmark_split_indices.npz.",
+  "crop_start_iq.npy": "Zero-based sample offset at 6 kHz within the independently processed raw partition, not within the complete WAV.",
+  "raw_partition_start.npy": "Inclusive raw WAV sample index at that recording's audio sampling rate.",
+  "raw_partition_stop.npy": "Exclusive raw WAV sample index at that recording's audio sampling rate.",
+  "fading_seed.npy": "Seed for the complete local configuration/profile/split fading realization, shared across SNRs only within that split.",
+  "impairment_seed.npy": "Per-vector RNG seed controlling crop choice, CFO, phase and Gaussian noise; reproduction also requires the source and generator version.",
+  "cfo_hz.npy": "Per-vector frequency offset in Hz, uniform in [-250,250].",
+  "phase_rad.npy": "Per-vector initial phase in radians, uniform in [0,2*pi).",
+  "clean_power.npy": "Measured faded-crop average power BEFORE unit-power normalization, not the stored noisy-vector power.",
+  "realized_snr_db.npy": "Finite-vector clean/noise power ratio after normalization; need not equal the target exactly.",
+  "benchmark_split_indices.npz": "Int64 train, val and test arrays partitioning all rows once. Shared across model training seeds.",
+  "paired_id.npy": "Duration diagnostic only: corresponding 2048-/8192-point pair ID; separate normalization in each arm."
+}

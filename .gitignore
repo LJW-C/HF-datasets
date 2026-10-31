@@ -35,3 +35,24 @@ Thumbs.db
 # Temporary documents
 *.tmp
 ~$*.docx
+
+# Revised arrays, audio, checkpoints and recreated experiment outputs
+*.npy
+*.npz
+*.wav
+*.pt
+*.pth
+*.joblib
+*.zip
+*.rar
+*.7z
+revision_v2/raw_*/
+revision_v2/benchmark_17/
+revision_v2/rebuilt_*/
+revision_v2/paired_windows_*/
+revision_v2/*runs*/
+revision_v2/reproduced_*/
+revision_v2/python_packages/
+revision_v2/upload_files/
+outputs/
+test_outputs/

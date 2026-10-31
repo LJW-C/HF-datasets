@@ -1,0 +1,30 @@
+[
+  {
+    "mode": "BPSK31",
+    "index": 17761,
+    "split": "test",
+    "profile": "good",
+    "snr_db": 25
+  },
+  {
+    "mode": "RTTY",
+    "index": 142560,
+    "split": "test",
+    "profile": "good",
+    "snr_db": 25
+  },
+  {
+    "mode": "MFSK16",
+    "index": 75363,
+    "split": "test",
+    "profile": "good",
+    "snr_db": 25
+  },
+  {
+    "mode": "DominoEX_8",
+    "index": 65761,
+    "split": "test",
+    "profile": "good",
+    "snr_db": 25
+  }
+]

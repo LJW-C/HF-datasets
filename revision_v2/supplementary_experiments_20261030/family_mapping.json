@@ -1,0 +1,24 @@
+{
+  "mode_to_family": {
+    "BPSK125": "PSK",
+    "BPSK31": "PSK",
+    "BPSK63": "PSK",
+    "Contestia_4_250": "Contestia",
+    "Contestia_8_500": "Contestia",
+    "CW": "CW",
+    "DominoEX_8": "DominoEX",
+    "MFSK16": "MFSK",
+    "MFSK32": "MFSK",
+    "Olivia_4_250": "Olivia",
+    "Olivia_8_500": "Olivia",
+    "QPSK125": "PSK",
+    "QPSK31": "PSK",
+    "QPSK63": "PSK",
+    "RTTY": "RTTY",
+    "Thor_16": "Thor",
+    "Throb_2": "Throb"
+  },
+  "reference_seed": 20261029,
+  "family_accuracy": 0.8647058823529412,
+  "interpretation": "Coarsened fine-model predictions, not a separately trained family classifier."
+}

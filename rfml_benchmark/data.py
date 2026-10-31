@@ -114,6 +114,25 @@ def make_splits(
     y = np.load(root / "y.npy", mmap_mode="r")
     all_indices = np.arange(len(y), dtype=np.int64)
 
+    predefined = root / "benchmark_split_indices.npz"
+    if predefined.exists():
+        if max_samples is not None and 0 < max_samples < len(y):
+            raise ValueError("Subsampling a predefined split is not supported; use the full saved split")
+        with np.load(predefined, allow_pickle=False) as saved:
+            parts = tuple(np.asarray(saved[key], dtype=np.int64) for key in ("train", "val", "test"))
+        merged = np.concatenate(parts)
+        if any(part.ndim != 1 or len(part) == 0 for part in parts):
+            raise ValueError("Invalid or empty predefined split")
+        if len(merged) != len(y) or not np.array_equal(np.sort(merged), all_indices):
+            raise ValueError("Predefined split must partition all vector indices exactly once")
+        return parts
+
+    meta_path = root / "meta.json"
+    if meta_path.exists():
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        if meta.get("split_protocol", "").startswith("raw_time_disjoint"):
+            raise ValueError("Time-disjoint dataset is missing its predefined split; refusing random split")
+
     if max_samples is not None and max_samples > 0 and max_samples < len(all_indices):
         rng = np.random.default_rng(seed)
         all_indices = np.sort(rng.choice(all_indices, size=max_samples, replace=False))

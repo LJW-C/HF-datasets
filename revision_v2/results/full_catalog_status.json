@@ -1,0 +1,9 @@
+{
+  "counts": {
+    "legacy_needs_full_review": 103,
+    "verified_new_recording": 33,
+    "excluded_modem_fallback": 3
+  },
+  "historical_full_arrays_overwritten": false,
+  "full_catalog_v2_arrays_generated": false
+}

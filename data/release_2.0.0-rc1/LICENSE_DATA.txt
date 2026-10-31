@@ -1,0 +1,6 @@
+HFDigiSet data: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+Dataset-record creator confirmed by the owner: Junwei Li.
+Version: 2.0.0-rc1. Version identifier: https://doi.org/10.5281/zenodo.23795076
+DOI was reserved at package preparation; consult the record for publication/access state.
+Software uses MIT where indicated; original copyright and third-party terms are retained.

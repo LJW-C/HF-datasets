@@ -1,0 +1,242 @@
+{
+  "version": "2.0.0-rc1",
+  "status": "DOI_RESERVED_PUBLICATION_PENDING",
+  "frozen_at_utc": "2026-10-30T05:28:59.573129+00:00",
+  "title": "HFDigiSet: Fldigi-Derived HF Digital-Mode I/Q Dataset for Signal Recognition",
+  "historical_doi": "10.5281/zenodo.20755739",
+  "revised_version_doi": "10.5281/zenodo.23795076",
+  "public_code_commit": null,
+  "data_license": "CC-BY-4.0",
+  "code_license": "MIT",
+  "scope": "17 revised benchmark classes; 33 screened source recordings. Not a verified 139-class release.",
+  "excluded_labels": [
+    "OFDM500F",
+    "OFDM750F",
+    "OFDM3500"
+  ],
+  "remaining_legacy_sources_needing_review": 103,
+  "benchmark": {
+    "vectors": 163200,
+    "length": 2048,
+    "fs_hz": 6000,
+    "split": [
+      114240,
+      24480,
+      24480
+    ]
+  },
+  "code_base_commit": "a7f119b59ee6c3973ede5f974b34e86481961036",
+  "code_version_note": "Base commit alone does not reproduce this revision; exact dirty-worktree snapshots are archived with SHA-256.",
+  "publication_note": "Reserved DOI is not proof of public release. Verify the version record after the owner publishes.",
+  "code_snapshot_sha256": "95d4e60eeb816550e484c6874a125fdecbb0859bf3cc0dc3af792b9e944c4f68",
+  "source_code_files": [
+    {
+      "path": "hf-digital-mode-iq-dataset-github/LICENSE",
+      "sha256": "75054b6a08e1008c86b6045ab99add2c8fa571987880951a9929f11ee56a7d64"
+    },
+    {
+      "path": "hf-digital-mode-iq-dataset-github/requirements.txt",
+      "sha256": "b8ac8fd0351a0f26ec84f57b9fbea75b007c9c83224242e0a1ae7a64ba6c74f3"
+    },
+    {
+      "path": "hf-digital-mode-iq-dataset-github/rfml_benchmark/__init__.py",
+      "sha256": "0b832844acac87a9fd72c08b223d04430297e32cf1f26239452282ccb97d9359"
+    },
+    {
+      "path": "hf-digital-mode-iq-dataset-github/rfml_benchmark/data.py",
+      "sha256": "47ff6a50e07d64f9698c3606faf6a7785bbcd9fe25cd055ca4fb86497d3fb2f0"
+    },
+    {
+      "path": "hf-digital-mode-iq-dataset-github/rfml_benchmark/models.py",
+      "sha256": "e37b33da3785553ad76211cc76db2eeb5f411dbaa6bf6ed7b7a0ff28d19e1513"
+    },
+    {
+      "path": "hf-digital-mode-iq-dataset-github/train_rf_classifier.py",
+      "sha256": "4ff7190afb32c3f095a404023fb7bdd673406603ba5b5c8b8358e99abd208c7a"
+    },
+    {
+      "path": "revision_v2/DATA_CORRECTION_NOTICE.md",
+      "sha256": "f6b2a47439b8f274b47776f8bc4993c1af98b45bef4d60c210b4f90967f1fd1b"
+    },
+    {
+      "path": "revision_v2/README.md",
+      "sha256": "ca58234e3897c80c243cf8081408c30282d8f624376149e74dbd7eacaaca3dea"
+    },
+    {
+      "path": "revision_v2/README_RELEASE_CANDIDATE.md",
+      "sha256": "ca58234e3897c80c243cf8081408c30282d8f624376149e74dbd7eacaaca3dea"
+    },
+    {
+      "path": "revision_v2/build_paired_window_study.py",
+      "sha256": "e2fa54ad740948e6e283552f0808843277998790f297e485794ff35d20a134b0"
+    },
+    {
+      "path": "revision_v2/build_verified_dataset.py",
+      "sha256": "cb40cefd14c01d0a2e55a3e7422300a69a89a676829fdb9520e5bd5fcf220c58"
+    },
+    {
+      "path": "revision_v2/capture_settings.json",
+      "sha256": "5ffad2f9a57b0a53aaebecce7ade983dab603c5d3d98729983b114eb3e3c4e90"
+    },
+    {
+      "path": "revision_v2/catalog_status.py",
+      "sha256": "867c4286ef95e9d95fd5b7398ceb5f809f79edd1374bed8d0e11db79555389da"
+    },
+    {
+      "path": "revision_v2/channel.py",
+      "sha256": "cda2e9f1ec1f482df0754468197317c90942288ebdc889a201b8d1904f708f4b"
+    },
+    {
+      "path": "revision_v2/channel_validation.json",
+      "sha256": "2cdff047fbf8b74f406cb6c216862a0158d1eb8b633d48d14fbbf8c3d8b7dd4e"
+    },
+    {
+      "path": "revision_v2/check_paired_windows.py",
+      "sha256": "15565d4f90b936d49ae6694020ad071fa50e44a3b466f9dbac15dd6cc3279c80"
+    },
+    {
+      "path": "revision_v2/compare_sources.py",
+      "sha256": "7ec37be941ee389e64f40276da0d5adaf46853e05ccd53e3923a01e03dd94226"
+    },
+    {
+      "path": "revision_v2/complete_benchmark.py",
+      "sha256": "891661d477235c48f029174ff8aa93b3dfa9b0ca967bbc7be02c846c1661dc7c"
+    },
+    {
+      "path": "revision_v2/export_capture_settings.py",
+      "sha256": "06013f413d0034b9047bfd72c3b366a31bfdae1565f081fb96b737fcfcea25a4"
+    },
+    {
+      "path": "revision_v2/make_revision_results.py",
+      "sha256": "0f9d50c8b0842839f0dd9969e08d29aabd3d5af8e351fb1faf440befa91468e8"
+    },
+    {
+      "path": "revision_v2/ofdm_identity_probe.json",
+      "sha256": "c386315ee7fca2a6a981f4510bfd7f951be08acbcf241d064e0c6cd9f6e4a29b"
+    },
+    {
+      "path": "revision_v2/prepare_release_candidate.py",
+      "sha256": "26a52cf1baa28cc11f946cf8026143bff8029e0768b4505238e2351389300cd6"
+    },
+    {
+      "path": "revision_v2/probe_and_repair_ofdm.py",
+      "sha256": "a05563247255258816c79b5889f3bad66882bcc8d4113d42b2ffbca354f56ead"
+    },
+    {
+      "path": "revision_v2/record_priority_sources.py",
+      "sha256": "2eaa4d842ebe2a0f26c15242e4a702d2681a140957967d0e544fc638811755b3"
+    },
+    {
+      "path": "revision_v2/record_verified_sources.py",
+      "sha256": "50ee2fd3b05a5a0147dd3f259e9516e6cd92e66cfb620bcc6bea64f853838370"
+    },
+    {
+      "path": "revision_v2/requirements-recorded.txt",
+      "sha256": "d47933f91e59b1a8f121bf984d9a0af0316c8b99f3b2995cdd0be8bd3af0e50b"
+    },
+    {
+      "path": "revision_v2/run_duration_experiments.py",
+      "sha256": "408fe18675b0e012d95e78afee4798119de0dceef461b52eadb936e0d6732bd9"
+    },
+    {
+      "path": "revision_v2/show_progress.py",
+      "sha256": "50b290ff2eb665e0aa169b19741b3d9d651decb545cd4298e25c11894cc411d5"
+    },
+    {
+      "path": "revision_v2/source_checks.py",
+      "sha256": "b15b909685a623f6b39750d5fa0011c933a2e157cf19cea70d45065eb06631dc"
+    },
+    {
+      "path": "revision_v2/summarize_supplementary_experiments.py",
+      "sha256": "fa35f8c2e9f4d822b9ab977290278431c976e223f63c0e8efab5fee33cfc413b"
+    },
+    {
+      "path": "revision_v2/test_pipeline.py",
+      "sha256": "e7c774baae3c3fa52f9d3bc004f2e73dd3a9d32713547e49f2d489ea90f695f6"
+    },
+    {
+      "path": "revision_v2/train_classical_baseline.py",
+      "sha256": "0516f251f77904066764e60cfa075d03d97cc71a15bb25fe53e4a0ed71e0cd7f"
+    },
+    {
+      "path": "revision_v2/train_suite.py",
+      "sha256": "29f5a895fd9601ab49613152b83f96c6a728f98031e75cd34bb207498a270cf6"
+    },
+    {
+      "path": "revision_v2/validate_channel.py",
+      "sha256": "42f4a4aa0a7f8ba69a3c482250ca9bb451e43ae64aae823185699698e724f82a"
+    },
+    {
+      "path": "revision_v2/verify_dataset.py",
+      "sha256": "dff27e96d79fdd932e37c592c72a3e02b99e25659bde381bef18b9edcd5d1c91"
+    },
+    {
+      "path": "revision_v2/verify_experiment.py",
+      "sha256": "6da1db1f2107586b4ebd2c07dc4d4c60b3cdf5a4ad59455b6cb1725c5cdd2a1a"
+    },
+    {
+      "path": "revision_v2/verify_release_candidate.py",
+      "sha256": "00c97940fab63d6be3f3d34a27d26d078692c8a723026b2484a6df0fe6579b55"
+    },
+    {
+      "path": "revision_v2/verify_reserved_upload.py",
+      "sha256": "00c97940fab63d6be3f3d34a27d26d078692c8a723026b2484a6df0fe6579b55"
+    },
+    {
+      "path": "revision_v2/write_execution_report.py",
+      "sha256": "f81e59891aa6d9b1b7fc3cf21c4d4497d042fcbf90679fd02920303972320cd7"
+    },
+    {
+      "path": "revision_v2/write_manifest.py",
+      "sha256": "e5c8ba476ddb7407874dc96dccfba4017a7dfacedfbdf4602b9d8bcfd69c31b3"
+    },
+    {
+      "path": "validation_figures/figures/figure5.pdf",
+      "sha256": "ce6d8eed7f2b105251983fddb739a9b584982238d2a2b6d9242186fcf5b7e56b"
+    },
+    {
+      "path": "validation_figures/plot_compact_examples.py",
+      "sha256": "6fa4b31fcd41ee0f9799d90fdf3782aa2c021a84331d31585bb48f910fc97fe3"
+    }
+  ],
+  "publication_status_scope": "Status and null publication timestamp describe metadata preparation, not the live Zenodo record state.",
+  "doi_status": "reserved_by_record_owner; public registration not verified",
+  "published_at_utc": null,
+  "metadata_prepared_at_utc": "2026-10-30T06:54:36.260425+00:00",
+  "creators": [
+    {
+      "name": "Junwei Li",
+      "family_name": "Li",
+      "given_name": "Junwei"
+    }
+  ],
+  "creator_confirmation": "Record owner confirmed Junwei Li only; other dataset creators remain unconfirmed.",
+  "public_upload_files": [
+    "benchmark_17_2.0.0-rc1.zip",
+    "screened_sources_33_2.0.0-rc1.zip",
+    "code_snapshot_2.0.0-rc1.zip",
+    "diagnostics_and_results_2.0.0-rc1.zip",
+    "source_wav_metadata.csv",
+    "data_dictionary.json",
+    "dataset_manifest.json",
+    "SHA256SUMS.json",
+    "LICENSE_DATA.txt",
+    "DATA_CORRECTION_NOTICE.md",
+    "README_RELEASE_CANDIDATE.md"
+  ],
+  "scientific_code_unchanged": [
+    "revision_v2/channel.py",
+    "revision_v2/build_verified_dataset.py",
+    "revision_v2/train_suite.py",
+    "revision_v2/train_classical_baseline.py",
+    "hf-digital-mode-iq-dataset-github/train_rf_classifier.py",
+    "hf-digital-mode-iq-dataset-github/rfml_benchmark/data.py",
+    "hf-digital-mode-iq-dataset-github/rfml_benchmark/models.py"
+  ],
+  "historical_file_inventory": [
+    "dataset.rar",
+    "datasets.rar",
+    "iq_catalog.pdf"
+  ],
+  "historical_wav_public_access": "not established by the visible v1 file list or local namesake RAR inventories"
+}

@@ -1,67 +1,27 @@
-````markdown
-# Dataset Files
+# Data Records
 
-This folder stores dataset metadata and release instructions.
+Large arrays, WAVs, model weights and ZIPs are distributed through Zenodo, not
+normal Git history. Revised identifier:
+[10.5281/zenodo.23795076](https://doi.org/10.5281/zenodo.23795076).
+Publication/download state was not confirmed at repository preparation.
 
-The full dataset generated in the current experiment is:
+- `release_2.0.0-rc1/`: exact small upload files, license, correction notice and
+  SHA-256 manifest. Preparation-state fields are not a live record status.
+- `schema/`: exact benchmark class/profile maps, parameters and environment;
+  metadata, not the arrays themselves.
+- `frozen_source_mapping.json`: archive paths and hashes mapped into this
+  checkout; compare with `repository_source_mapping.json` for adaptations.
+- `repository_source_mapping.json`: current source hashes and byte-identical
+  versus adapted status relative to the frozen scientific snapshot.
 
-```text
-E:\仿真\build dataset
-````
+The revised array is `(163200, 2048)` complex64. `X.npy` alone is 2,673,868,928
+bytes including its header. The historical 139-label array is a different
+`(1334400, 2048)` artifact; compressed RAR size is not an array-shape check.
+Historical version: [10.5281/zenodo.20755739](https://doi.org/10.5281/zenodo.20755739).
+The historical visible file inventory does not establish public historical WAV
+access. The revised source ZIP separately supplies 33 screened new WAV sets.
 
-Core files:
-
-```text
-X.npy                  2,673,868,928 bytes
-y.npy                  1,305,728 bytes
-snr_db.npy             326,528 bytes
-channel_profile.npy    326,528 bytes
-mode_names.json        256 bytes
-channel_profiles.json  54 bytes
-meta.json              1,850 bytes
-```
-
-The checksum manifest is:
-
-```text
-dataset/dataset_manifest.json
-```
-
-## Dataset Release
-
-The latest version of the generated dataset has been released on IEEE DataPort:
-
-```text
-Junwei Li, "A Reproducible HF Digital-Mode I/Q Dataset Generation Framework from Fldigi WAV Recordings",
-IEEE DataPort, June 17, 2026, doi:10.21227/9pzn-h761
-```
-
-A mirror copy is also available through Baidu Netdisk:
-
-```text
-File: dataset.rar
-Link: https://pan.baidu.com/s/1jsF8lL9DguAO7UcSWeW5Dg?pwd=1234
-Extraction code: 1234
-```
-
-Users are encouraged to cite the IEEE DataPort record when using this dataset.
-
-
-
-## Git LFS Alternative
-
-If using Git LFS, copy the dataset into this repository and run:
-
-```powershell
-git lfs install
-git lfs track "*.npy" "*.npz" "*.wav"
-git add .gitattributes data/
-git commit -m "Add dataset files with Git LFS"
-git push origin main
-```
-
-For very large files, Release assets or an external dataset archive are usually
-easier to manage than keeping the dataset in Git history.
-
-```
-```
+Run `python scripts/verify_download.py --root PATH_TO_DOWNLOADS` to check the
+eleven-file upload package. See the root README for extraction locations,
+fixed split counts and reproduction commands. These ZIPs are not NumPy byte
+shards; do not use the historical shard-restoration helper to unpack them.

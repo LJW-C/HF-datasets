@@ -1,40 +1,13 @@
-# IEEE Dataset Paper Draft
+# Historical Paper Assets
 
-This folder contains IEEE-style LaTeX drafts for the HF Watterson radio signal dataset generator.
+Figures, tables and `results_summary.json` in this directory are historical
+artifacts, not corrected 17-class raw-time-disjoint benchmark results.
 
-Files:
+Revised CSVs and example indices: `../revision_v2/results/`.
+Three-seed and paired-duration CSVs:
+`../revision_v2/supplementary_experiments_20261030/`.
+Compact quality-control plotting: `../validation_figures/plot_compact_examples.py`.
 
-```text
-ieee_dataset_paper.tex
-hf_digital_mode_dataset_ieee_cited.tex
-references.bib
-figures/
-tables/
-```
-
-Compile with a local LaTeX installation:
-
-```bash
-pdflatex hf_digital_mode_dataset_ieee_cited.tex
-bibtex hf_digital_mode_dataset_ieee_cited
-pdflatex hf_digital_mode_dataset_ieee_cited.tex
-pdflatex hf_digital_mode_dataset_ieee_cited.tex
-```
-
-Before compiling the paper with the latest benchmark results, run:
-
-```bash
-python ../make_paper_results.py --runs-dir ../runs/model_suite --paper-dir .
-```
-
-Before submission, update:
-
-```text
-author names
-affiliations
-repository URL
-dataset DOI or download URL
-acknowledgments
-```
-
-The cited paper draft imports measured benchmark results from `tables/` and `figures/`. Re-run `make_paper_results.py` whenever the model results change.
+Private reviewer letters and submission manuscripts are not included in this
+update. Deleted historical paper-generation scripts are not required for the
+current pipeline. Do not substitute historical figures for corrected results.

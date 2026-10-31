@@ -1,28 +1,31 @@
-name: Python syntax check
+name: Python and benchmark checks
 
 on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
-  py_compile:
+  pipeline:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: false
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-      - name: Compile Python files
+          python-version: '3.11'
+      - name: Install CPU test dependencies
         run: |
-          python -m compileall \
-            generate_fldigi_wavs.py \
-            validate_raw_wavs.py \
-            build_panoradio_like_dataset.py \
-            visualize_iq_samples.py \
-            diagnose_mode_visuals.py \
-            train_rf_classifier.py \
-            run_model_suite.py \
-            summarize_model_results.py \
-            make_paper_results.py \
-            rfml_benchmark \
-            scripts
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install numpy scipy scikit-learn matplotlib tqdm joblib pyyaml
+      - name: Compile existing Python sources
+        run: python -m compileall -q build_datasets.py build_all_dataset.py generate_fldigi_wavs.py generate_all_fldigi_wavs.py visualize_iq_samples.py train_rf_classifier.py run_model_suite.py rfml_benchmark revision_v2 scripts tests validation_figures legacy
+      - name: Check repository metadata and split guards
+        run: python -m unittest discover -s tests -v
+      - name: Test channel PSD and synthetic time-disjoint generation
+        run: python revision_v2/test_pipeline.py
+      - name: Exercise CPU training and visualization with synthetic fixtures
+        run: python tests/smoke_training.py

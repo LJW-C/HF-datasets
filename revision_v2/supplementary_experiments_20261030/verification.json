@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "repeat_runs_checked": 6,
+  "duration_runs_checked": 12,
+  "seeds": [
+    20261029,
+    20261030,
+    20261031
+  ],
+  "sd_definition": "Sample standard deviation across training seeds (ddof=1).",
+  "main_benchmark": "Fixed 17-class raw-time-disjoint split; Conformer and Random Forest repeated only.",
+  "diagnostic": "Separate paired four-class duration study, IQ-CNN and Random Forest, 12800 vectors per length, test n=1920.",
+  "limitations": "Three seeds measure training variability, not independent recordings, payloads or channel populations. No architecture-wide significance claim."
+}

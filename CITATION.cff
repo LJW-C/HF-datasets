@@ -1,16 +1,29 @@
 cff-version: 1.2.0
-title: HF Watterson Radio Signal Dataset Generator
-message: If you use this dataset generation pipeline, please cite the repository and the relevant ITU-R recommendations.
+title: "HFDigiSet: Fldigi-Derived HF Digital-Mode I/Q Dataset for Signal Recognition"
+message: "Cite the data version actually used. The revised DOI was reserved; check Zenodo for current publication/access state."
 type: software
+version: 2.0.0-rc1
 authors:
-  - name: Dataset generation pipeline contributors
-repository-code: https://github.com/your-user/your-repository
-abstract: Python scripts for generating Fldigi WAV recordings, converting them into Panoradio-like complex IQ datasets, applying PathSim-style Watterson HF fading channels, and visualizing IQ samples.
-keywords:
-  - HF
-  - Watterson channel
-  - ITU-R F.1487
-  - modulation classification
-  - IQ dataset
+  - family-names: Li
+    given-names: Junwei
+repository-code: https://github.com/LJW-C/HF-datasets
+url: https://github.com/LJW-C/HF-datasets
 license: MIT
-
+abstract: "Corrected Fldigi-derived HF benchmark code for 17 configurations in nine families, with raw-time-disjoint splits, provenance, visualization and baseline evaluation. Historical 139-label arrays are separate."
+keywords:
+  - HF communications
+  - Fldigi
+  - Watterson channel
+  - radio signal classification
+  - complex baseband
+preferred-citation:
+  type: data
+  authors:
+    - family-names: Li
+      given-names: Junwei
+  title: "HFDigiSet: Fldigi-Derived HF Digital-Mode I/Q Dataset for Signal Recognition"
+  version: 2.0.0-rc1
+  year: 2026
+  doi: 10.5281/zenodo.23795076
+  publisher:
+    name: Zenodo

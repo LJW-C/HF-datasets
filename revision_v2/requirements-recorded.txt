@@ -1,0 +1,13 @@
+# Observed environment, not a claim of latest package versions.
+# Python 3.9.19; CUDA PyTorch wheel was 2.0.1+cu117 on this machine.
+numpy==1.23.5
+scipy==1.13.1
+scikit-learn==1.5.0
+sounddevice==0.5.6
+soundfile==0.13.1
+tqdm==4.70.1
+matplotlib==3.9.0
+joblib==1.4.2
+cffi==2.0.0
+pycparser==2.23
+# Install the appropriate torch 2.0.1 CUDA build for the target platform.

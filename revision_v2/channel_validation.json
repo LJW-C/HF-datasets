@@ -1,0 +1,38 @@
+[
+  {
+    "requested_2sigma_hz": 0.1,
+    "fir_power_spectrum_2sigma_hz": 0.10000025147255259,
+    "empirical_output_psd_2sigma_hz": 0.10151795823123569,
+    "tap_mean_power": 1.0111734867095947,
+    "empirical_duration_s": 6000,
+    "empirical_fs_hz": 60,
+    "passed": true
+  },
+  {
+    "requested_2sigma_hz": 0.5,
+    "fir_power_spectrum_2sigma_hz": 0.5000012573627618,
+    "empirical_output_psd_2sigma_hz": 0.4983302734758417,
+    "tap_mean_power": 1.0214784145355225,
+    "empirical_duration_s": 6000,
+    "empirical_fs_hz": 60,
+    "passed": true
+  },
+  {
+    "requested_2sigma_hz": 1.0,
+    "fir_power_spectrum_2sigma_hz": 1.0000025147255236,
+    "empirical_output_psd_2sigma_hz": 1.0044487175201313,
+    "tap_mean_power": 0.9946144819259644,
+    "empirical_duration_s": 6000,
+    "empirical_fs_hz": 60,
+    "passed": true
+  },
+  {
+    "requested_2sigma_hz": 10.0,
+    "fir_power_spectrum_2sigma_hz": 10.00002514725526,
+    "empirical_output_psd_2sigma_hz": 10.00140412574576,
+    "tap_mean_power": 1.0015062093734741,
+    "empirical_duration_s": 6000,
+    "empirical_fs_hz": 60,
+    "passed": true
+  }
+]

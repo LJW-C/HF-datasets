@@ -1,0 +1,11 @@
+{
+  "python": "3.9.19 (main, May  6 2024, 20:12:36) [MSC v.1916 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "1.23.5",
+    "scipy": "1.13.1",
+    "torch": "2.0.1+cu117",
+    "scikit-learn": "1.5.0",
+    "sounddevice": "0.5.6",
+    "soundfile": "0.13.1"
+  }
+}

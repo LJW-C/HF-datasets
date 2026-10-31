@@ -1,0 +1,26 @@
+[
+  {
+    "requested": "OFDM3500",
+    "expected_id": 90,
+    "name_method_result": "BPSK31",
+    "id_method_result": "BPSK31",
+    "id_method_actual_id": 59,
+    "id_method_passed": false
+  },
+  {
+    "requested": "OFDM500F",
+    "expected_id": 88,
+    "name_method_result": "BPSK31",
+    "id_method_result": "BPSK31",
+    "id_method_actual_id": 59,
+    "id_method_passed": false
+  },
+  {
+    "requested": "OFDM750F",
+    "expected_id": 89,
+    "name_method_result": "BPSK31",
+    "id_method_result": "BPSK31",
+    "id_method_actual_id": 59,
+    "id_method_passed": false
+  }
+]

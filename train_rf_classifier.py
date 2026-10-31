@@ -111,18 +111,31 @@ def save_confusion_matrix(path: Path, targets: np.ndarray, preds: np.ndarray, mo
     path.parent.mkdir(parents=True, exist_ok=True)
     np.savetxt(path.with_suffix(".csv"), cm, fmt="%d", delimiter=",")
 
-    fig, ax = plt.subplots(figsize=(11.5, 9.2), constrained_layout=True)
+    num_classes = len(mode_names)
+    fig_size = max(12.0, min(44.0, 5.0 + 0.28 * num_classes))
+    label_size = 10
+    if num_classes > 40:
+        label_size = 8
+    if num_classes > 80:
+        label_size = 6
+    if num_classes > 120:
+        label_size = 5
+
+    fig, ax = plt.subplots(figsize=(fig_size, fig_size), constrained_layout=True)
     image = ax.imshow(cm, interpolation="nearest", cmap="Blues")
     cbar = fig.colorbar(image, ax=ax)
-    cbar.ax.tick_params(labelsize=12)
-    ax.set_title("Confusion Matrix", fontsize=16)
-    ax.set_xlabel("Predicted", fontsize=15)
-    ax.set_ylabel("True", fontsize=15)
-    ax.set_xticks(np.arange(len(mode_names)))
-    ax.set_yticks(np.arange(len(mode_names)))
-    ax.set_xticklabels(mode_names, rotation=45, ha="right", rotation_mode="anchor", fontsize=10)
-    ax.set_yticklabels(mode_names, fontsize=10)
-    fig.savefig(path, dpi=180)
+    cbar.ax.tick_params(labelsize=max(label_size, 8))
+    ax.set_title("Confusion Matrix", fontsize=max(label_size + 8, 16))
+    ax.set_xlabel("Predicted", fontsize=max(label_size + 7, 15))
+    ax.set_ylabel("True", fontsize=max(label_size + 7, 15))
+    ax.set_xticks(np.arange(num_classes))
+    ax.set_yticks(np.arange(num_classes))
+    ax.set_xticklabels(mode_names, rotation=90, ha="center", va="top", fontsize=label_size)
+    ax.set_yticklabels(mode_names, fontsize=label_size)
+    ax.tick_params(axis="x", pad=2)
+    ax.tick_params(axis="y", pad=2)
+    fig.savefig(path, dpi=220, bbox_inches="tight")
+    fig.savefig(path.with_suffix(".pdf"), bbox_inches="tight")
     plt.close(fig)
 
 
@@ -145,12 +158,14 @@ def main() -> None:
     parser.add_argument("--max-samples", type=int, default=0, help="Optional subset size for smoke tests.")
     parser.add_argument("--include-amp-phase", action="store_true", help="Use I,Q,amplitude,phase as 4 input channels.")
     args = parser.parse_args()
+    if args.epochs < 1:
+        parser.error('--epochs must be positive')
 
     set_seed(args.seed)
     device = device_from_arg(args.device)
     meta = load_metadata(args.dataset_root)
     out_dir = Path(args.out_dir) / args.model
-    out_dir.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=False)
 
     train_idx, val_idx, test_idx = make_splits(
         args.dataset_root,
@@ -206,7 +221,7 @@ def main() -> None:
             best_val_acc = val_acc
             torch.save({"model": model.state_dict(), "config": config}, out_dir / "best.pt")
 
-    checkpoint = torch.load(out_dir / "best.pt", map_location=device)
+    checkpoint = torch.load(out_dir / "best.pt", map_location=device, weights_only=True)
     model.load_state_dict(checkpoint["model"])
     pred_data = collect_predictions(model, test_loader, device)
     pred = pred_data["pred"]

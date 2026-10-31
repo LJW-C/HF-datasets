@@ -1,0 +1,79 @@
+{
+  "dataset": "HFDigiSet_revision_v2",
+  "num_vectors": 163200,
+  "vector_len": 2048,
+  "fs_hz": 6000,
+  "seed": 20261029,
+  "snr_db_values": [
+    25,
+    20,
+    15,
+    10,
+    5,
+    0,
+    -5,
+    -10
+  ],
+  "profiles": {
+    "good": [
+      0.5,
+      0.1
+    ],
+    "moderate": [
+      1.0,
+      0.5
+    ],
+    "poor": [
+      2.0,
+      1.0
+    ],
+    "flutter": [
+      0.5,
+      10.0
+    ]
+  },
+  "spread_definition": "output Gaussian Doppler PSD two_sigma_hz",
+  "fading_interpolation": "polyphase resample with 16 low-rate-sample margins",
+  "split_protocol": "raw_time_disjoint_before_hilbert_resampling_and_fading",
+  "split_counts": {
+    "train": 114240,
+    "val": 24480,
+    "test": 24480
+  },
+  "vectors_per_mode_snr": 1200,
+  "profile_assignment": "balanced_within_mode_snr_split",
+  "raw_source_count": 17,
+  "source_recording_seconds": [
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60,
+    60
+  ],
+  "guard_sec": 0.5,
+  "activity_power_ratio": 0.001,
+  "random_frequency_offset_hz": [
+    -250,
+    250
+  ],
+  "phase_range_rad": [
+    0,
+    6.283185307179586
+  ],
+  "snr_definition": "clean signal power / complex AWGN power over full fs bandwidth",
+  "short_source_policy": "reject",
+  "shared_fading": "within mode/profile/split, never across splits",
+  "limitation": "One recording per mode; partitions are time-disjoint, not recording-disjoint. Crops can overlap within one split."
+}

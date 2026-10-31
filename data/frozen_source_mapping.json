@@ -1,0 +1,139 @@
+{
+  "source": "Zenodo-bound code_snapshot_2.0.0-rc1.zip; scientific run snapshot",
+  "source_archive_sha256": "95d4e60eeb816550e484c6874a125fdecbb0859bf3cc0dc3af792b9e944c4f68",
+  "dataset_doi": "10.5281/zenodo.23795076",
+  "publication_state": "DOI reserved; public access not verified during repository preparation",
+  "mapping": [
+    {
+      "archive_path": "revision_v2/build_verified_dataset.py",
+      "repository_path": "revision_v2/build_verified_dataset.py",
+      "sha256": "cb40cefd14c01d0a2e55a3e7422300a69a89a676829fdb9520e5bd5fcf220c58"
+    },
+    {
+      "archive_path": "revision_v2/channel.py",
+      "repository_path": "revision_v2/channel.py",
+      "sha256": "cda2e9f1ec1f482df0754468197317c90942288ebdc889a201b8d1904f708f4b"
+    },
+    {
+      "archive_path": "revision_v2/source_checks.py",
+      "repository_path": "revision_v2/source_checks.py",
+      "sha256": "b15b909685a623f6b39750d5fa0011c933a2e157cf19cea70d45065eb06631dc"
+    },
+    {
+      "archive_path": "revision_v2/record_verified_sources.py",
+      "repository_path": "revision_v2/record_verified_sources.py",
+      "sha256": "50ee2fd3b05a5a0147dd3f259e9516e6cd92e66cfb620bcc6bea64f853838370"
+    },
+    {
+      "archive_path": "revision_v2/verify_dataset.py",
+      "repository_path": "revision_v2/verify_dataset.py",
+      "sha256": "dff27e96d79fdd932e37c592c72a3e02b99e25659bde381bef18b9edcd5d1c91"
+    },
+    {
+      "archive_path": "revision_v2/test_pipeline.py",
+      "repository_path": "revision_v2/test_pipeline.py",
+      "sha256": "e7c774baae3c3fa52f9d3bc004f2e73dd3a9d32713547e49f2d489ea90f695f6"
+    },
+    {
+      "archive_path": "revision_v2/validate_channel.py",
+      "repository_path": "revision_v2/validate_channel.py",
+      "sha256": "42f4a4aa0a7f8ba69a3c482250ca9bb451e43ae64aae823185699698e724f82a"
+    },
+    {
+      "archive_path": "revision_v2/train_suite.py",
+      "repository_path": "revision_v2/train_suite.py",
+      "sha256": "29f5a895fd9601ab49613152b83f96c6a728f98031e75cd34bb207498a270cf6"
+    },
+    {
+      "archive_path": "revision_v2/train_classical_baseline.py",
+      "repository_path": "revision_v2/train_classical_baseline.py",
+      "sha256": "0516f251f77904066764e60cfa075d03d97cc71a15bb25fe53e4a0ed71e0cd7f"
+    },
+    {
+      "archive_path": "revision_v2/build_paired_window_study.py",
+      "repository_path": "revision_v2/build_paired_window_study.py",
+      "sha256": "e2fa54ad740948e6e283552f0808843277998790f297e485794ff35d20a134b0"
+    },
+    {
+      "archive_path": "revision_v2/check_paired_windows.py",
+      "repository_path": "revision_v2/check_paired_windows.py",
+      "sha256": "15565d4f90b936d49ae6694020ad071fa50e44a3b466f9dbac15dd6cc3279c80"
+    },
+    {
+      "archive_path": "revision_v2/run_duration_experiments.py",
+      "repository_path": "revision_v2/run_duration_experiments.py",
+      "sha256": "408fe18675b0e012d95e78afee4798119de0dceef461b52eadb936e0d6732bd9"
+    },
+    {
+      "archive_path": "revision_v2/summarize_supplementary_experiments.py",
+      "repository_path": "revision_v2/summarize_supplementary_experiments.py",
+      "sha256": "fa35f8c2e9f4d822b9ab977290278431c976e223f63c0e8efab5fee33cfc413b"
+    },
+    {
+      "archive_path": "revision_v2/make_revision_results.py",
+      "repository_path": "revision_v2/make_revision_results.py",
+      "sha256": "0f9d50c8b0842839f0dd9969e08d29aabd3d5af8e351fb1faf440befa91468e8"
+    },
+    {
+      "archive_path": "revision_v2/verify_reserved_upload.py",
+      "repository_path": "revision_v2/verify_reserved_upload.py",
+      "sha256": "00c97940fab63d6be3f3d34a27d26d078692c8a723026b2484a6df0fe6579b55"
+    },
+    {
+      "archive_path": "revision_v2/requirements-recorded.txt",
+      "repository_path": "revision_v2/requirements-recorded.txt",
+      "sha256": "d47933f91e59b1a8f121bf984d9a0af0316c8b99f3b2995cdd0be8bd3af0e50b"
+    },
+    {
+      "archive_path": "revision_v2/channel_validation.json",
+      "repository_path": "revision_v2/channel_validation.json",
+      "sha256": "2cdff047fbf8b74f406cb6c216862a0158d1eb8b633d48d14fbbf8c3d8b7dd4e"
+    },
+    {
+      "archive_path": "revision_v2/ofdm_identity_probe.json",
+      "repository_path": "revision_v2/ofdm_identity_probe.json",
+      "sha256": "c386315ee7fca2a6a981f4510bfd7f951be08acbcf241d064e0c6cd9f6e4a29b"
+    },
+    {
+      "archive_path": "revision_v2/DATA_CORRECTION_NOTICE.md",
+      "repository_path": "revision_v2/DATA_CORRECTION_NOTICE.md",
+      "sha256": "f6b2a47439b8f274b47776f8bc4993c1af98b45bef4d60c210b4f90967f1fd1b"
+    },
+    {
+      "archive_path": "hf-digital-mode-iq-dataset-github/LICENSE",
+      "repository_path": "LICENSE",
+      "sha256": "75054b6a08e1008c86b6045ab99add2c8fa571987880951a9929f11ee56a7d64"
+    },
+    {
+      "archive_path": "hf-digital-mode-iq-dataset-github/requirements.txt",
+      "repository_path": "requirements.txt",
+      "sha256": "b8ac8fd0351a0f26ec84f57b9fbea75b007c9c83224242e0a1ae7a64ba6c74f3"
+    },
+    {
+      "archive_path": "hf-digital-mode-iq-dataset-github/rfml_benchmark/__init__.py",
+      "repository_path": "rfml_benchmark/__init__.py",
+      "sha256": "0b832844acac87a9fd72c08b223d04430297e32cf1f26239452282ccb97d9359"
+    },
+    {
+      "archive_path": "hf-digital-mode-iq-dataset-github/rfml_benchmark/data.py",
+      "repository_path": "rfml_benchmark/data.py",
+      "sha256": "47ff6a50e07d64f9698c3606faf6a7785bbcd9fe25cd055ca4fb86497d3fb2f0"
+    },
+    {
+      "archive_path": "hf-digital-mode-iq-dataset-github/rfml_benchmark/models.py",
+      "repository_path": "rfml_benchmark/models.py",
+      "sha256": "e37b33da3785553ad76211cc76db2eeb5f411dbaa6bf6ed7b7a0ff28d19e1513"
+    },
+    {
+      "archive_path": "hf-digital-mode-iq-dataset-github/train_rf_classifier.py",
+      "repository_path": "train_rf_classifier.py",
+      "sha256": "4ff7190afb32c3f095a404023fb7bdd673406603ba5b5c8b8358e99abd208c7a"
+    },
+    {
+      "archive_path": "validation_figures/plot_compact_examples.py",
+      "repository_path": "validation_figures/plot_compact_examples.py",
+      "sha256": "6fa4b31fcd41ee0f9799d90fdf3782aa2c021a84331d31585bb48f910fc97fe3"
+    }
+  ],
+  "note": "Repository hashes for portable entry points are recorded separately after edits. The source archive and uploaded data are unchanged."
+}
